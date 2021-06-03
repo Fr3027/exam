@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="405b27a2-b7b7-4710-9da9-530d07d3ef99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/wrapper/PaperHistoryWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/wrapper/PaperWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/store/modules/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/Manage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/Manage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/manage/AdminManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/manage/AdminManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/manage/CourseManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/manage/CourseManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/manage/PaperHistory.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/manage/PaperHistory.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/manage/PaperManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/manage/PaperManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/manage/QuestionManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/manage/QuestionManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/manage/QuestionScore.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/manage/QuestionScore.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/manage/StudentManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/manage/StudentManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/manage/TeacherManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/manage/TeacherManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/student/Generate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/student/Generate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/student/PaperHistory.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/student/PaperHistory.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/views/student/PaperList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/views/student/PaperList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../在线英语学习网站/app/src/views/Manage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../在线英语学习网站/app/src/views/Manage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_10_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_javassist_javassist_3_23_2_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_aop_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_beans_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_context_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_core_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_expression_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_orm_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_test_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_web_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/accessing-data-mysql.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/controller/AddressController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/controller/BasketController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/controller/HistoryorderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/controller/TagController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/controller/YourorderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/entity/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/entity/Basket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/entity/HistoryOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/entity/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/entity/Tag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/entity/YourOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/entity/YourOrderStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/repository/AddressRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/repository/BasketRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/repository/HistoryOrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/repository/TagRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/repository/YourOrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/storage/FileSystemStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/storage/StorageException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/storage/StorageFileNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/storage/StorageProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/storage/StorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/java/com/asaccount/wrapper/MultipleChoiceWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/controller/BasketController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/controller/HistoryorderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/controller/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/controller/StringToProductConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/controller/TagController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/controller/YourorderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/entity/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/entity/Basket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/entity/HistoryOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/entity/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/entity/YourOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/entity/YourOrderStatistics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/repository/AddressRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/repository/BasketRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/repository/HistoryOrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/repository/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/repository/TagRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/repository/YourOrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/storage/FileSystemStorageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/storage/StorageException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/storage/StorageFileNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/storage/StorageProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/storage/StorageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/Asaccount/target/classes/com/asaccount/wrapper/MultipleChoiceWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/my-project/src/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../网上订餐小程序/my-project/src/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../网上订餐小程序/my-project/src/pages/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../网上订餐小程序/my-project/src/pages/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/java/backend/src/main/java/com/example/demo/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/java/backend/src/main/java/com/example/demo/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/java/backend/src/main/java/com/example/demo/bean/Profession.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/java/backend/src/main/java/com/example/demo/bean/Profession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/indexLeft copy.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/indexLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/indexLeft.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/indexRight.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/indexRight.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/indexRightUser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/vue/src/project/indexRightUser.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../问吧一站式咨询服务平台/启动步骤.mov" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/PaperController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="227" column="5" selection-start-line="227" selection-start-column="5" selection-end-line="227" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/wrapper/PaperWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/Paper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="54" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/PaperHistoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/SpringBootMybatisApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/AnswerInputDynamicSqlSupport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/AnswerInputMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spring.datasource.driver-class-name</find>
+      <find>connector</find>
+      <find>mybatis.resources</find>
+      <find>comment</find>
+      <find>runtime</find>
+      <find>mybatis</find>
+      <find>maven</find>
+      <find>mybatis-</find>
+      <find>ssco</find>
+      <find>date</find>
+      <find>javatype</find>
+      <find>evernote</find>
+      <find>LocalDateFormatter</find>
+      <find>Formatter</find>
+      <find>formatter</find>
+      <find>jack</find>
+      <find>answerinpu</find>
+      <find>selecti</find>
+      <find>update</find>
+      <find>generator</find>
+      <find>mapper-locations</find>
+      <find>title</find>
+      <find>简答题</find>
+      <find>主观</find>
+      <find>lOCALDATE</find>
+      <find>localdate</find>
+      <find>paperwrapper</find>
+      <find>paperhistory.sele</find>
+      <find>poi</find>
+      <find>notfound</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/Users.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/UsersMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/init.sql" />
+        <option value="$USER_HOME$/.m2/settings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/resource/UserResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/UserResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/utils/LocalDateTypeHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/SpringBootMybatisApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/QuestionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/PaperMapController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/wrapper/PaperHistoryWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/Paper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/wrapper/PaperWrapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/PaperHistoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/PaperController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="11" />
+    <option name="y" value="23" />
+    <option name="width" value="1366" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.techprimers.mybatis.springbootmybatis.wrapper" />
+      <recent name="com.techprimers.mybatis.springbootmybatis.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootMybatisApplication">
+    <configuration name="spring-boot-mybatis [mybatis-generator:generate]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="-Dmybatis.generator.overwrite=true" />
+                <option value="mybatis-generator:generate" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringBootMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techprimers.mybatis.springbootmybatis.SpringBootMybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.spring-boot-mybatis [mybatis-generator:generate]" />
+      <item itemvalue="Spring Boot.SpringBootMybatisApplication" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="405b27a2-b7b7-4710-9da9-530d07d3ef99" name="Default Changelist" comment="" />
+      <created>1582954355675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582954355675</updated>
+      <workItem from="1582954357252" duration="1523000" />
+      <workItem from="1582956040149" duration="4596000" />
+      <workItem from="1582966431785" duration="597000" />
+      <workItem from="1582981578371" duration="2415000" />
+      <workItem from="1583031645394" duration="2393000" />
+      <workItem from="1583056107605" duration="1377000" />
+      <workItem from="1583057589362" duration="2233000" />
+      <workItem from="1583107852392" duration="201000" />
+      <workItem from="1583200279186" duration="1634000" />
+      <workItem from="1583374737468" duration="8221000" />
+      <workItem from="1583459910815" duration="1949000" />
+      <workItem from="1583761975437" duration="1559000" />
+      <workItem from="1583811880317" duration="20486000" />
+      <workItem from="1584006558206" duration="3560000" />
+      <workItem from="1584104270636" duration="792000" />
+      <workItem from="1584157664536" duration="236000" />
+      <workItem from="1584158052709" duration="31000" />
+      <workItem from="1584159593937" duration="464000" />
+      <workItem from="1584168499829" duration="28000" />
+      <workItem from="1584168629610" duration="391000" />
+      <workItem from="1584259318467" duration="583000" />
+      <workItem from="1584278661326" duration="56000" />
+      <workItem from="1584278772334" duration="70000" />
+      <workItem from="1584426943783" duration="525000" />
+      <workItem from="1584785859194" duration="2464000" />
+      <workItem from="1584864082001" duration="329000" />
+      <workItem from="1585478867601" duration="16000" />
+      <workItem from="1585560597345" duration="4873000" />
+      <workItem from="1586432523475" duration="2262000" />
+      <workItem from="1587810413682" duration="1889000" />
+      <workItem from="1588144219531" duration="588000" />
+      <workItem from="1588405856563" duration="2803000" />
+      <workItem from="1589341348733" duration="443000" />
+      <workItem from="1589351145039" duration="500000" />
+      <workItem from="1589420529427" duration="501000" />
+      <workItem from="1589441931673" duration="508000" />
+      <workItem from="1589504471768" duration="651000" />
+      <workItem from="1589937690539" duration="3456000" />
+      <workItem from="1590583303789" duration="221000" />
+      <workItem from="1590734652970" duration="4575000" />
+      <workItem from="1592127294537" duration="91000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="82090000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="11" y="23" width="1366" height="745" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21072507" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.77794796" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.56355286" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32924962" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32924962" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32924962" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32924962" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="REST Client" order="15" weight="0.4777948" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.17824773" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25755286" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3093415" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31852987" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32924962" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.17824773" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/UserMapper.java.1" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/UserMapper.java.2" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/init.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/UserDynamicSqlSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/dynamic-sql/mybatis-dynamic-sql/1.1.4/mybatis-dynamic-sql-1.1.4.jar!/org/mybatis/dynamic/sql/SqlBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/utils/LocalDateTypeHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/PaperHistoryDynamicSqlSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/PaperMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/dynamic-sql/mybatis-dynamic-sql/1.1.4/mybatis-dynamic-sql-1.1.4.jar!/org/mybatis/dynamic/sql/util/mybatis3/MyBatis3Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/PaperHistoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="400" column="19" lean-forward="true" selection-start-line="400" selection-start-column="19" selection-end-line="400" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="530" selection-start-line="530" selection-end-line="530" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1673">
+          <caret line="137" column="84" selection-start-line="137" selection-start-column="84" selection-end-line="137" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/PaperMapController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/AnswerInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/CourseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/PaperHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="118" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="118" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/wrapper/PaperHistoryWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/wrapper/PaperWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/model/Paper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="54" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/PaperHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/SpringBootMybatisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/AnswerInputDynamicSqlSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/mapper/AnswerInputMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techprimers/mybatis/springbootmybatis/controller/PaperController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="227" column="5" selection-start-line="227" selection-start-column="5" selection-end-line="227" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="-U clean install" />
+  </component>
+</project>
